@@ -1,15 +1,10 @@
-using Microsoft.AspNetCore;
-using Microsoft.AspNetCore.Hosting;
-
 namespace EFSaving
 {
     class Program
     {
-        public static void Main(string[] args) =>
-            CreateWebHostBuilder(args).Build().Run();
-
-        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>();
+        static void Main(string[] args)
+        {
+            Basics.Sample.Run();
+        }
     }
 }
